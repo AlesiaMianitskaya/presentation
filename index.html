@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/black.css" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css" />
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? "css/print/pdf.css"
+        : "css/print/paper.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section><h5>Puppeteer to Write End-to-End Tests</h5></section>
+        <section>
+          <h5>What is End to End Testing & Why is it Important</h5>
+          <p>
+            End-to-end testing is a methodology used to test whether the flow of
+            an application is performing as designed from start to finish. The
+            purpose of carrying out end-to-end tests is to identify system
+            dependencies and to ensure that the right information is passed
+            between various system components.
+          </p>
+        </section>
+        <section>
+          What are Headless Chrome & Puppeteer
+          <img src="./css/assets/chrome.png" alt="Chrome icon" />
+          Puppeteer is a Node library which provides a high-level API to control
+          Chrome or Chromium over the DevTools Protocol.
+        </section>
+        <section>
+          Take a Screenshot of a Page
+          <img src="./css/assets/screenshot.png" alt="Screenshot" />
+        </section>
+        <section>
+          Create a PDF
+          <img src="./css/assets/pdf.png" alt="PDF" />
+        </section>
+        <section>
+          Google Something
+          <img src="./css/assets/google.png" alt="Google" />
+        </section>
+        <section>
+          Debugging Puppeteer
+          <img src="./css/assets/debug.png" alt="Debugging" />
+          <li>
+            <ul>
+              Turn Off Headless Mode
+            </ul>
+            <ul>
+              Enable SlowMo
+            </ul>
+            <ul>
+              Auto-Open DevTools Panel
+            </ul>
+          </li>
+        </section>
+        <section>
+          More Cool Features of Puppeteer
+          <ul>
+            <li>Run in a Docker container or serverless environment</li>
+            <li>Intercept network requests</li>
+            <li>Capture performance info</li>
+            <li>Test a Chrome extension</li>
+            <li>Run code in a page</li>
+            <li>Emulate Chrome on a mobile device</li>
+          </ul>
+        </section>
+        <section>
+          React & Jest & Puppeteer
+          <img src="./css/assets/react.png" alt="React&Jest" />
+        </section>
+        <section>
+          Jest & Puppeteer Test
+          <img src="./css/assets/config.png" alt="Config" />
+          <p>npm install --save-dev jest-puppeteer puppeteer jest</p>
+        </section>
+        <section>
+          Jest & Puppeteer Test
+          <img src="./css/assets/test.png" alt="Jest test" />
+        </section>
+        <section>
+          <h5>Thanks!</h5>
+        </section>
+      </div>
+    </div>
+
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        dependencies: [
+          { src: "plugin/markdown/marked.js" },
+          { src: "plugin/markdown/markdown.js" },
+          { src: "plugin/notes/notes.js", async: true },
+          { src: "plugin/highlight/highlight.js", async: true }
+        ]
+      });
+    </script>
+  </body>
+</html>
